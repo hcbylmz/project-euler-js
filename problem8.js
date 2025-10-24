@@ -3,10 +3,7 @@ const number = "73167176531330624919225119674426574742355349194934 9698352031277
 const trimNumber = (number) => {
     return number.replace(/\s/g, '');
 }
-
 const numberArray = trimNumber(number).split('');
-
-
 const productOfAdjacentDigits = (numberArray, length) => {
     let product = 1;
     for (let i = 0; i < length; i++) {
@@ -14,7 +11,6 @@ const productOfAdjacentDigits = (numberArray, length) => {
     }
     return product;
 }
-
 let largestProduct = 0;
 for (let i = 0; i < numberArray.length - 13; i++) {
     const adjacentDigits = numberArray.slice(i, i + 13);
