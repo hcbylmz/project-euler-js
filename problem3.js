@@ -1,13 +1,8 @@
+import { checkIfPrime } from "./helpers.js";
+
 const num = 600851475143;
 
-const checkIfPrime = (num) => {
-  for (let i = 2; i < num; i++) {
-    if (num % i === 0) {
-      return false;
-    }
-  }
-  return true;
-}
+
 
 const primeFactors = [];
 let testNumber =2;
